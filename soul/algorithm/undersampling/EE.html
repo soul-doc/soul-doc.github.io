@@ -135,8 +135,8 @@
                         <a href="ClusterOSS.html" title="ClusterOSS.">ClusterOSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="" title="Easy Ensemble core."></a>
-                        <a href="" title="Easy Ensemble core.">EE</a>
+                        <a class="class" href="" title="Easy Ensemble algorithm."></a>
+                        <a href="" title="Easy Ensemble algorithm.">EE</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="ENN.html" title="Edited Nearest Neighbour rule."></a>
@@ -167,8 +167,8 @@
                         <a href="OSS.html" title="One-Side Selection core.">OSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="RU.html" title="Compute a random soul.algorithm.undersampling."></a>
-                        <a href="RU.html" title="Compute a random soul.algorithm.undersampling.">RU</a>
+                        <a class="class" href="RU.html" title="Compute a random algorithm."></a>
+                        <a href="RU.html" title="Compute a random algorithm.">RU</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="SBC.html" title="Undersampling Based on Clustering core."></a>
@@ -205,7 +205,7 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Easy Ensemble core. Original paper: &quot;Exploratory Undersampling for Class-Imbalance Learning&quot; by Xu-Ying Liu, Jianxin Wu and Zhi-Hua Zhou.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Easy Ensemble algorithm. Original paper: &quot;Exploratory Undersampling for Class-Imbalance Learning&quot; by Xu-Ying Liu, Jianxin Wu and Zhi-Hua Zhou.
 </p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -257,9 +257,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.undersampling.EE#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.EE"></a><a id="&lt;init&gt;:EE"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.undersampling.EE"></a><a id="&lt;init&gt;:EE"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/EE.html#&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.EE" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/EE.html#&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.undersampling.EE" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -268,10 +268,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">EE</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="minorityClass">minorityClass: <span class="extype" name="scala.Any">Any</span> = <span class="symbol">-1</span></span>)</span>
+        <span class="name">EE</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">minorityClass</dt><dd class="cmt"><p>indicates the minority class. If it's set to -1, it will set to the one with less instances</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -372,6 +372,25 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.EE#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compute(file:Option[String],ratio:Double,replacement:Boolean,nTimes:Int):soul.data.Data"></a><a id="compute(Option[String],Double,Boolean,Int):Data"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/EE.html#compute(file:Option[String],ratio:Double,replacement:Boolean,nTimes:Int):soul.data.Data" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="ratio">ratio: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1.0</span></span>, <span name="replacement">replacement: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="nTimes">nTimes: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compute the Easy Ensemble core.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the Easy Ensemble core.
+</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">ratio</dt><dd class="cmt"><p>ratio to know how many majority class examples to preserve. By default it's set to 1 so there
+                   will be the same minority class examples as majority class examples. It will take
+                   numMinorityInstances * ratio</p></dd><dt class="param">replacement</dt><dd class="cmt"><p>whether or not to sample randomly with replacement or not. false by default</p></dd><dt class="param">nTimes</dt><dd class="cmt"><p>times to perform the random algorithm</p></dd><dt>returns</dt><dd class="cmt"><p>data structure with all the important information and index of elements kept</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -520,25 +539,6 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.EE#sample" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sample(file:Option[String],ratio:Double,replacement:Boolean,nTimes:Int):soul.data.Data"></a><a id="sample(Option[String],Double,Boolean,Int):Data"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/EE.html#sample(file:Option[String],ratio:Double,replacement:Boolean,nTimes:Int):soul.data.Data" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sample</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="ratio">ratio: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1.0</span></span>, <span name="replacement">replacement: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="nTimes">nTimes: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Compute the Easy Ensemble core.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the Easy Ensemble core.
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">ratio</dt><dd class="cmt"><p>ratio to know how many majority class examples to preserve. By default it's set to 1 so there
-                   will be the same minority class examples as majority class examples. It will take
-                   numMinorityInstances * ratio</p></dd><dt class="param">replacement</dt><dd class="cmt"><p>whether or not to sample randomly with replacement or not. false by default</p></dd><dt class="param">nTimes</dt><dd class="cmt"><p>times to perform the random soul.algorithm.undersampling</p></dd><dt>returns</dt><dd class="cmt"><p>soul.data structure with all the important information and index of elements kept</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

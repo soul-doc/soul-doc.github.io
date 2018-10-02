@@ -135,8 +135,8 @@
                         <a href="ClusterOSS.html" title="ClusterOSS.">ClusterOSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="EE.html" title="Easy Ensemble core."></a>
-                        <a href="EE.html" title="Easy Ensemble core.">EE</a>
+                        <a class="class" href="EE.html" title="Easy Ensemble algorithm."></a>
+                        <a href="EE.html" title="Easy Ensemble algorithm.">EE</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="ENN.html" title="Edited Nearest Neighbour rule."></a>
@@ -167,8 +167,8 @@
                         <a href="" title="One-Side Selection core.">OSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="RU.html" title="Compute a random soul.algorithm.undersampling."></a>
-                        <a href="RU.html" title="Compute a random soul.algorithm.undersampling.">RU</a>
+                        <a class="class" href="RU.html" title="Compute a random algorithm."></a>
+                        <a href="RU.html" title="Compute a random algorithm.">RU</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="SBC.html" title="Undersampling Based on Clustering core."></a>
@@ -373,6 +373,23 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.OSS#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compute(file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.data.Data"></a><a id="compute(Option[String],Distance):Data"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#compute(file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.data.Data" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compute the One-Side Selection core.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the One-Side Selection core.
+</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt>returns</dt><dd class="cmt"><p>data structure with all the important information</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -521,23 +538,6 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.OSS#sample" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sample(file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.data.Data"></a><a id="sample(Option[String],Distance):Data"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/OSS.html#sample(file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.data.Data" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sample</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Compute the One-Side Selection core.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the One-Side Selection core.
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt>returns</dt><dd class="cmt"><p>soul.data structure with all the important information</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

@@ -135,8 +135,8 @@
                         <a href="" title="ClusterOSS.">ClusterOSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="EE.html" title="Easy Ensemble core."></a>
-                        <a href="EE.html" title="Easy Ensemble core.">EE</a>
+                        <a class="class" href="EE.html" title="Easy Ensemble algorithm."></a>
+                        <a href="EE.html" title="Easy Ensemble algorithm.">EE</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="ENN.html" title="Edited Nearest Neighbour rule."></a>
@@ -167,8 +167,8 @@
                         <a href="OSS.html" title="One-Side Selection core.">OSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="RU.html" title="Compute a random soul.algorithm.undersampling."></a>
-                        <a href="RU.html" title="Compute a random soul.algorithm.undersampling.">RU</a>
+                        <a class="class" href="RU.html" title="Compute a random algorithm."></a>
+                        <a href="RU.html" title="Compute a random algorithm.">RU</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="SBC.html" title="Undersampling Based on Clustering core."></a>
@@ -258,9 +258,9 @@ by Victor H Barella, Eduardo P Costa and André C P L F Carvalho.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.undersampling.ClusterOSS#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.ClusterOSS"></a><a id="&lt;init&gt;:ClusterOSS"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.undersampling.ClusterOSS"></a><a id="&lt;init&gt;:ClusterOSS"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/ClusterOSS.html#&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.ClusterOSS" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/ClusterOSS.html#&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.undersampling.ClusterOSS" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -269,10 +269,10 @@ by Victor H Barella, Eduardo P Costa and André C P L F Carvalho.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ClusterOSS</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="minorityClass">minorityClass: <span class="extype" name="scala.Any">Any</span> = <span class="symbol">-1</span></span>)</span>
+        <span class="name">ClusterOSS</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">minorityClass</dt><dd class="cmt"><p>indicates the minority class. If it's set to -1, it will set to the one with less instances</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -373,6 +373,24 @@ by Victor H Barella, Eduardo P Costa and André C P L F Carvalho.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.ClusterOSS#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compute(file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,numClusters:Int,restarts:Int,minDispersion:Double,maxIterations:Int):soul.data.Data"></a><a id="compute(Option[String],Distance,Int,Int,Int,Double,Int):Data"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/ClusterOSS.html#compute(file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,numClusters:Int,restarts:Int,minDispersion:Double,maxIterations:Int):soul.data.Data" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">3</span></span>, <span name="numClusters">numClusters: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">15</span></span>, <span name="restarts">restarts: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="minDispersion">minDispersion: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0001</span></span>, <span name="maxIterations">maxIterations: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">100</span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Undersampling method based in ClusterOSS
+</p><div class="fullcomment"><div class="comment cmt"><p>Undersampling method based in ClusterOSS
+</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to use when computing k-NN rule (normally 3 neighbours)</p></dd><dt class="param">numClusters</dt><dd class="cmt"><p>number of clusters to be created by KMeans core</p></dd><dt class="param">restarts</dt><dd class="cmt"><p>number of times to relaunch KMeans core</p></dd><dt class="param">minDispersion</dt><dd class="cmt"><p>stop KMeans core if dispersion is lower than this value</p></dd><dt class="param">maxIterations</dt><dd class="cmt"><p>number of iterations to be done in KMeans core</p></dd><dt>returns</dt><dd class="cmt"><p>data structure with all the important information</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -521,24 +539,6 @@ by Victor H Barella, Eduardo P Costa and André C P L F Carvalho.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.ClusterOSS#sample" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sample(file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,numClusters:Int,restarts:Int,minDispersion:Double,maxIterations:Int):soul.data.Data"></a><a id="sample(Option[String],Distance,Int,Int,Int,Double,Int):Data"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/ClusterOSS.html#sample(file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,numClusters:Int,restarts:Int,minDispersion:Double,maxIterations:Int):soul.data.Data" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sample</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">3</span></span>, <span name="numClusters">numClusters: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">15</span></span>, <span name="restarts">restarts: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="minDispersion">minDispersion: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0001</span></span>, <span name="maxIterations">maxIterations: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">100</span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Undersampling method based in ClusterOSS
-</p><div class="fullcomment"><div class="comment cmt"><p>Undersampling method based in ClusterOSS
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to use when computing k-NN rule (normally 3 neighbours)</p></dd><dt class="param">numClusters</dt><dd class="cmt"><p>number of clusters to be created by KMeans core</p></dd><dt class="param">restarts</dt><dd class="cmt"><p>number of times to relaunch KMeans core</p></dd><dt class="param">minDispersion</dt><dd class="cmt"><p>stop KMeans core if dispersion is lower than this value</p></dd><dt class="param">maxIterations</dt><dd class="cmt"><p>number of iterations to be done in KMeans core</p></dd><dt>returns</dt><dd class="cmt"><p>soul.data structure with all the important information</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

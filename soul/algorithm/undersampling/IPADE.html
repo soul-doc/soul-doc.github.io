@@ -135,8 +135,8 @@
                         <a href="ClusterOSS.html" title="ClusterOSS.">ClusterOSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="EE.html" title="Easy Ensemble core."></a>
-                        <a href="EE.html" title="Easy Ensemble core.">EE</a>
+                        <a class="class" href="EE.html" title="Easy Ensemble algorithm."></a>
+                        <a href="EE.html" title="Easy Ensemble algorithm.">EE</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="ENN.html" title="Edited Nearest Neighbour rule."></a>
@@ -167,8 +167,8 @@
                         <a href="OSS.html" title="One-Side Selection core.">OSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="RU.html" title="Compute a random soul.algorithm.undersampling."></a>
-                        <a href="RU.html" title="Compute a random soul.algorithm.undersampling.">RU</a>
+                        <a class="class" href="RU.html" title="Compute a random algorithm."></a>
+                        <a href="RU.html" title="Compute a random algorithm.">RU</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="SBC.html" title="Undersampling Based on Clustering core."></a>
@@ -258,9 +258,9 @@ generation techniques: IPADE-ID&quot; by Victoria López, Isaac Triguero, Crist�
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.undersampling.IPADE#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.IPADE"></a><a id="&lt;init&gt;:IPADE"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.undersampling.IPADE"></a><a id="&lt;init&gt;:IPADE"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/IPADE.html#&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.IPADE" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/IPADE.html#&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.undersampling.IPADE" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -269,10 +269,10 @@ generation techniques: IPADE-ID&quot; by Victoria López, Isaac Triguero, Crist�
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">IPADE</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="minorityClass">minorityClass: <span class="extype" name="scala.Any">Any</span> = <span class="symbol">-1</span></span>)</span>
+        <span class="name">IPADE</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>localTrainData to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">minorityClass</dt><dd class="cmt"><p>indicates the minority class. If it's set to -1, it will set to the one with less instances</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>localTrainData to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -373,6 +373,24 @@ generation techniques: IPADE-ID&quot; by Victoria López, Isaac Triguero, Crist�
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.IPADE#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compute(file:Option[String],iterations:Int,strategy:Int,randomChoice:Boolean):soul.data.Data"></a><a id="compute(Option[String],Int,Int,Boolean):Data"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/IPADE.html#compute(file:Option[String],iterations:Int,strategy:Int,randomChoice:Boolean):soul.data.Data" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">100</span></span>, <span name="strategy">strategy: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="randomChoice">randomChoice: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compute Iterative Instance Adjustment for Imbalanced Domains algorithm
+</p><div class="fullcomment"><div class="comment cmt"><p>Compute Iterative Instance Adjustment for Imbalanced Domains algorithm
+</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">iterations</dt><dd class="cmt"><p>number of iterations used in Differential Evolution</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>strategy used in the mutation process of Differential Evolution</p></dd><dt class="param">randomChoice</dt><dd class="cmt"><p>whether to choose a random individual or not</p></dd><dt>returns</dt><dd class="cmt"><p>data structure with all the important information</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -521,24 +539,6 @@ generation techniques: IPADE-ID&quot; by Victoria López, Isaac Triguero, Crist�
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.IPADE#sample" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sample(file:Option[String],iterations:Int,strategy:Int,randomChoice:Boolean):soul.data.Data"></a><a id="sample(Option[String],Int,Int,Boolean):Data"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/IPADE.html#sample(file:Option[String],iterations:Int,strategy:Int,randomChoice:Boolean):soul.data.Data" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sample</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">100</span></span>, <span name="strategy">strategy: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="randomChoice">randomChoice: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Compute Iterative Instance Adjustment for Imbalanced Domains soul.algorithm.undersampling
-</p><div class="fullcomment"><div class="comment cmt"><p>Compute Iterative Instance Adjustment for Imbalanced Domains soul.algorithm.undersampling
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">iterations</dt><dd class="cmt"><p>number of iterations used in Differential Evolution</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>strategy used in the mutation process of Differential Evolution</p></dd><dt class="param">randomChoice</dt><dd class="cmt"><p>whether to choose a random individual or not</p></dd><dt>returns</dt><dd class="cmt"><p>soul.data structure with all the important information</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
