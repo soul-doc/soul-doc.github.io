@@ -205,7 +205,8 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Balance Cascade algorithm. Original paper: &quot;Exploratory Undersampling for Class-Imbalance Learning&quot; by Xu-Ying Liu, Jianxin Wu and Zhi-Hua Zhou.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Balance Cascade algorithm. Original paper: &quot;Exploratory Undersampling for Class-Imbalance Learning&quot; by Xu-Ying Liu,
+Jianxin Wu and Zhi-Hua Zhou.
 </p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -390,7 +391,7 @@
       <p class="shortcomment cmt">Compute the Balance Cascade core.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the Balance Cascade core.
 </p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to use when computing k-NN rule (normally 3 neighbours)</p></dd><dt class="param">nMaxSubsets</dt><dd class="cmt"><p>maximum number of subsets to generate</p></dd><dt class="param">nFolds</dt><dd class="cmt"><p>number of subsets to create when applying cross-validation</p></dd><dt class="param">ratio</dt><dd class="cmt"><p>ratio to know how many majority class examples to preserve. By default it's set to 1 so there
                    will be the same minority class examples as majority class examples. It will take
-                   numMinorityInstances * ratio</p></dd><dt>returns</dt><dd class="cmt"><p>array of soul.data structures with all the important information and index of elements kept for each subset</p></dd></dl></div>
+                   numMinorityInstances * ratio</p></dd><dt>returns</dt><dd class="cmt"><p>array of data structures with all the important information and index of elements kept for each subset</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
