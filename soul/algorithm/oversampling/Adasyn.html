@@ -135,12 +135,12 @@
                         <a href="DBSmote.html" title="DensityBasedSmote algorithm">DBSmote</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="Mdo.html" title="SMOTE algorithm"></a>
-                        <a href="Mdo.html" title="SMOTE algorithm">Mdo</a>
+                        <a class="class" href="Mdo.html" title="Mdo algorithm"></a>
+                        <a href="Mdo.html" title="Mdo algorithm">Mdo</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="Mwmote.html" title=""></a>
-                        <a href="Mwmote.html" title="">Mwmote</a>
+                        <a class="class" href="Mwmote.html" title="Mwmote algorithm"></a>
+                        <a href="Mwmote.html" title="Mwmote algorithm">Mwmote</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="SLSmote.html" title="Safe-Level-SMOTE algorithm"></a>
@@ -188,7 +188,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">Adasyn</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">Adasyn</span><span class="result"> extends <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></span>
       </span>
       </h4>
 
@@ -198,7 +198,7 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="soul.algorithm.Algorithm">Algorithm</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -224,7 +224,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="soul.algorithm.oversampling.Adasyn"><span>Adasyn</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="soul.algorithm.oversampling.Adasyn"><span>Adasyn</span></li><li class="in" name="soul.algorithm.Algorithm"><span>Algorithm</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -361,9 +361,9 @@
               
         </dd></dl></div>
     </li><li name="soul.algorithm.oversampling.Adasyn#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="compute(d:Double,B:Double,k:Int,dType:soul.util.Utilities.Distances.Distance,seed:Long):Unit"></a><a id="compute(Double,Double,Int,Distance,Long):Unit"></a>
+      <a id="compute(file:Option[String],d:Double,B:Double,k:Int,dType:soul.util.Utilities.Distances.Distance,seed:Long):Unit"></a><a id="compute(Option[String],Double,Double,Int,Distance,Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/Adasyn.html#compute(d:Double,B:Double,k:Int,dType:soul.util.Utilities.Distances.Distance,seed:Long):Unit" title="Permalink">
+      <a href="../../../soul/algorithm/oversampling/Adasyn.html#compute(file:Option[String],d:Double,B:Double,k:Int,dType:soul.util.Utilities.Distances.Distance,seed:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -372,12 +372,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compute</span><span class="params">(<span name="d">d: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1</span></span>, <span name="B">B: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="dType">dType: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">5</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="d">d: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1</span></span>, <span name="B">B: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="dType">dType: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">5</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <p class="shortcomment cmt">Compute the Smote algorithm
 </p><div class="fullcomment"><div class="comment cmt"><p>Compute the Smote algorithm
-</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>preset threshold for the maximum tolerated degree of class imbalance radio</p></dd><dt class="param">B</dt><dd class="cmt"><p>balance level after generation of synthetic data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt class="param">dType</dt><dd class="cmt"><p>the type of distance to use, hvdm or euclidean</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed for the random</p></dd><dt>returns</dt><dd class="cmt"><p>synthetic samples generated</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">d</dt><dd class="cmt"><p>preset threshold for the maximum tolerated degree of class imbalance radio</p></dd><dt class="param">B</dt><dd class="cmt"><p>balance level after generation of synthetic data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt class="param">dType</dt><dd class="cmt"><p>the type of distance to use, hvdm or euclidean</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed for the random</p></dd><dt>returns</dt><dd class="cmt"><p>synthetic samples generated</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -665,7 +665,9 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="soul.algorithm.Algorithm">
+              <h3>Inherited from <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
