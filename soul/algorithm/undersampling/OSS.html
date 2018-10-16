@@ -200,7 +200,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">OSS</span><span class="result"> extends <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></span>
+        <span class="name">OSS</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
 
@@ -211,7 +211,7 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="soul.algorithm.Algorithm">Algorithm</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -237,7 +237,7 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="soul.algorithm.undersampling.OSS"><span>OSS</span></li><li class="in" name="soul.algorithm.Algorithm"><span>Algorithm</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="soul.algorithm.undersampling.OSS"><span>OSS</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -258,9 +258,9 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.undersampling.OSS#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.OSS"></a><a id="&lt;init&gt;:OSS"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.algorithm.undersampling.OSS"></a><a id="&lt;init&gt;:OSS"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/OSS.html#&lt;init&gt;(data:soul.data.Data,seed:Long,minorityClass:Any):soul.algorithm.undersampling.OSS" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.algorithm.undersampling.OSS" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -269,10 +269,10 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">OSS</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="minorityClass">minorityClass: <span class="extype" name="scala.Any">Any</span> = <span class="symbol">-1</span></span>)</span>
+        <span class="name">OSS</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">minorityClass</dt><dd class="cmt"><p>indicates the minority class. If it's set to -1, it will set to the one with less instances</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -347,6 +347,22 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.OSS#classesToWorkWith" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="classesToWorkWith:Array[Any]"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#classesToWorkWith:Array[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">classesToWorkWith</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -374,9 +390,9 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
               
         </dd></dl></div>
     </li><li name="soul.algorithm.undersampling.OSS#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="compute(file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.data.Data"></a><a id="compute(Option[String],Distance):Data"></a>
+      <a id="compute():soul.data.Data"></a><a id="compute():Data"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/OSS.html#compute(file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.data.Data" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#compute():soul.data.Data" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -385,11 +401,43 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
+        <span class="name">compute</span><span class="params">()</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
       </span>
       
-      <p class="shortcomment cmt">Compute the One-Side Selection core.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the One-Side Selection core.
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt>returns</dt><dd class="cmt"><p>data structure with all the important information</p></dd></dl></div>
+      <p class="shortcomment cmt">Compute the OSS algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the OSS algorithm.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>undersampled data structure</p></dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.OSS#dataToWorkWith" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dataToWorkWith:Array[Array[Double]]"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#dataToWorkWith:Array[Array[Double]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dataToWorkWith</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      
+      
+    </li><li name="soul.algorithm.undersampling.OSS#distances" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="distances:Array[Array[Double]]"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#distances:Array[Array[Double]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">distances</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -677,9 +725,7 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="soul.algorithm.Algorithm">
-              <h3>Inherited from <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

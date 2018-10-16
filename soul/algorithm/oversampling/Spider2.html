@@ -188,7 +188,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">Spider2</span><span class="result"> extends <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></span>
+        <span class="name">Spider2</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
 
@@ -199,7 +199,7 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="soul.algorithm.Algorithm">Algorithm</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -225,7 +225,7 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="soul.algorithm.oversampling.Spider2"><span>Spider2</span></li><li class="in" name="soul.algorithm.Algorithm"><span>Algorithm</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="soul.algorithm.oversampling.Spider2"><span>Spider2</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -246,9 +246,9 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.oversampling.Spider2#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.oversampling.Spider2"></a><a id="&lt;init&gt;:Spider2"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],relabel:String,ampl:String,k:Int,distance:soul.util.Utilities.Distances.Distance):soul.algorithm.oversampling.Spider2"></a><a id="&lt;init&gt;:Spider2"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/Spider2.html#&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.oversampling.Spider2" title="Permalink">
+      <a href="../../../soul/algorithm/oversampling/Spider2.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],relabel:String,ampl:String,k:Int,distance:soul.util.Utilities.Distances.Distance):soul.algorithm.oversampling.Spider2" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -257,10 +257,10 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Spider2</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>)</span>
+        <span class="name">Spider2</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="relabel">relabel: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;yes&quot;</span></span>, <span name="ampl">ampl: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;weak&quot;</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">relabel</dt><dd class="cmt"><p>relabeling option</p></dd><dt class="param">ampl</dt><dd class="cmt"><p>amplification option</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of minority class nearest neighbors</p></dd><dt class="param">distance</dt><dd class="cmt"><p>the type of distance to use, hvdm or euclidean</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -380,9 +380,9 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
               
         </dd></dl></div>
     </li><li name="soul.algorithm.oversampling.Spider2#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="compute(file:Option[String],relabel:String,ampl:String,k:Int,dType:soul.util.Utilities.Distances.Distance):Unit"></a><a id="compute(Option[String],String,String,Int,Distance):Unit"></a>
+      <a id="compute():soul.data.Data"></a><a id="compute():Data"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/Spider2.html#compute(file:Option[String],relabel:String,ampl:String,k:Int,dType:soul.util.Utilities.Distances.Distance):Unit" title="Permalink">
+      <a href="../../../soul/algorithm/oversampling/Spider2.html#compute():soul.data.Data" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -391,12 +391,12 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="relabel">relabel: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;yes&quot;</span></span>, <span name="ampl">ampl: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;weak&quot;</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="dType">dType: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">compute</span><span class="params">()</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
       </span>
       
-      <p class="shortcomment cmt">Compute the Smote algorithm
-</p><div class="fullcomment"><div class="comment cmt"><p>Compute the Smote algorithm
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">relabel</dt><dd class="cmt"><p>relabeling option</p></dd><dt class="param">ampl</dt><dd class="cmt"><p>amplification option</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of minority class nearest neighbors</p></dd><dt class="param">dType</dt><dd class="cmt"><p>the type of distance to use, hvdm or euclidean</p></dd><dt>returns</dt><dd class="cmt"><p>synthetic samples generated</p></dd></dl></div>
+      <p class="shortcomment cmt">Compute the Spider2 algorithm
+</p><div class="fullcomment"><div class="comment cmt"><p>Compute the Spider2 algorithm
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>synthetic samples generated</p></dd></dl></div>
     </li><li name="soul.algorithm.oversampling.Spider2#correct" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="correct(x:Int,k:Int,out:Boolean):Boolean"></a><a id="correct(Int,Int,Boolean):Boolean"></a>
       <span class="permalink">
@@ -416,7 +416,7 @@ Krystyna Napiera la, Jerzy Stefanowski and Szymon Wilk.
 or false for correct and incorrect classification respectively
 </p><div class="fullcomment"><div class="comment cmt"><p>classifies example x using its k-nearest neighbors and returns true
 or false for correct and incorrect classification respectively
-</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>index of the element</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of minority class nearest neighbors</p></dd><dt class="param">out</dt><dd class="cmt"><p>indicate if use the output or the input data, true = input data</p></dd><dt>returns</dt><dd class="cmt"><p>true or false</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>randomIndex of the element</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of minority class nearest neighbors</p></dd><dt class="param">out</dt><dd class="cmt"><p>indicate if use the output or the input data, true = input data</p></dd><dt>returns</dt><dd class="cmt"><p>true or false</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -720,9 +720,7 @@ or false for correct and incorrect classification respectively
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="soul.algorithm.Algorithm">
-              <h3>Inherited from <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

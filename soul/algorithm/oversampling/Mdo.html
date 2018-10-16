@@ -188,7 +188,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">MDO</span><span class="result"> extends <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></span>
+        <span class="name">MDO</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
 
@@ -199,7 +199,7 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="soul.algorithm.Algorithm">Algorithm</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -225,7 +225,7 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="soul.algorithm.oversampling.MDO"><span>MDO</span></li><li class="in" name="soul.algorithm.Algorithm"><span>Algorithm</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="soul.algorithm.oversampling.MDO"><span>MDO</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -246,9 +246,9 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.oversampling.MDO#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.oversampling.MDO"></a><a id="&lt;init&gt;:MDO"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.algorithm.oversampling.MDO"></a><a id="&lt;init&gt;:MDO"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/MDO.html#&lt;init&gt;(data:soul.data.Data,seed:Long):soul.algorithm.oversampling.MDO" title="Permalink">
+      <a href="../../../soul/algorithm/oversampling/MDO.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance):soul.algorithm.oversampling.MDO" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -257,10 +257,10 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">MDO</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>)</span>
+        <span class="name">MDO</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>the type of distance to use, hvdm or euclidean</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -380,9 +380,9 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
               
         </dd></dl></div>
     </li><li name="soul.algorithm.oversampling.MDO#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="compute(file:Option[String],dType:soul.util.Utilities.Distances.Distance):Unit"></a><a id="compute(Option[String],Distance):Unit"></a>
+      <a id="compute():soul.data.Data"></a><a id="compute():Data"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/MDO.html#compute(file:Option[String],dType:soul.util.Utilities.Distances.Distance):Unit" title="Permalink">
+      <a href="../../../soul/algorithm/oversampling/MDO.html#compute():soul.data.Data" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -391,12 +391,12 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compute</span><span class="params">(<span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="dType">dType: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">compute</span><span class="params">()</span><span class="result">: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>
       </span>
       
-      <p class="shortcomment cmt">Compute the Mahalanobis distance-based over-sampling algorithm
-</p><div class="fullcomment"><div class="comment cmt"><p>Compute the Mahalanobis distance-based over-sampling algorithm
-</p></div><dl class="paramcmts block"><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">dType</dt><dd class="cmt"><p>the type of distance to use, hvdm or euclidean</p></dd><dt>returns</dt><dd class="cmt"><p>synthetic samples generated</p></dd></dl></div>
+      <p class="shortcomment cmt">Compute the MDO algorithm
+</p><div class="fullcomment"><div class="comment cmt"><p>Compute the MDO algorithm
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>synthetic samples generated</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -684,9 +684,7 @@ techniques&quot; by Lida Adbi and Sattar Hashemi.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="soul.algorithm.Algorithm">
-              <h3>Inherited from <span class="extype" name="soul.algorithm.Algorithm">Algorithm</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

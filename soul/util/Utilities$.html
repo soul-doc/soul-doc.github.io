@@ -984,9 +984,9 @@ Nominal columns are converted to doubles.
 </p><div class="fullcomment"><div class="comment cmt"><p>Denormalize the data
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the data to denormalize</p></dd><dt class="param">max</dt><dd class="cmt"><p>the max value of the samples for each column</p></dd><dt class="param">min</dt><dd class="cmt"><p>the min value of the samples for each column</p></dd><dt>returns</dt><dd class="cmt"><p>the data denormalized</p></dd></dl></div>
     </li><li name="soul.util.Utilities#zeroOneNormalization" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="zeroOneNormalization(d:soul.data.Data):Array[Array[Double]]"></a><a id="zeroOneNormalization(Data):Array[Array[Double]]"></a>
+      <a id="zeroOneNormalization(d:soul.data.Data,x:Array[Array[Double]]):Array[Array[Double]]"></a><a id="zeroOneNormalization(Data,Array[Array[Double]]):Array[Array[Double]]"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#zeroOneNormalization(d:soul.data.Data):Array[Array[Double]]" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#zeroOneNormalization(d:soul.data.Data,x:Array[Array[Double]]):Array[Array[Double]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -995,7 +995,7 @@ Nominal columns are converted to doubles.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">zeroOneNormalization</span><span class="params">(<span name="d">d: <a href="../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+        <span class="name">zeroOneNormalization</span><span class="params">(<span name="d">d: <a href="../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="x">x: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
       
       <p class="shortcomment cmt">Normalize the data as follow: for each column, x, (x-min(x))/(max(x)-min(x))
