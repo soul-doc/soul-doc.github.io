@@ -258,9 +258,9 @@ Distribution&quot; by J. Laurikkala.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.undersampling.NCL#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,threshold:Double):soul.algorithm.undersampling.NCL"></a><a id="&lt;init&gt;:NCL"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,threshold:Double,normalize:Boolean,randomData:Boolean):soul.algorithm.undersampling.NCL"></a><a id="&lt;init&gt;:NCL"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/NCL.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,threshold:Double):soul.algorithm.undersampling.NCL" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/NCL.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance,k:Int,threshold:Double,normalize:Boolean,randomData:Boolean):soul.algorithm.undersampling.NCL" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -269,11 +269,11 @@ Distribution&quot; by J. Laurikkala.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">NCL</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">3</span></span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.5</span></span>)</span>
+        <span class="name">NCL</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">3</span></span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.5</span></span>, <span name="normalize">normalize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="randomData">randomData: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule core</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to use when computing k-NN rule (normally 3 neighbours)</p></dd><dt class="param">threshold</dt><dd class="cmt"><p>consider a class to be undersampled if the number of instances of this class is
-                 greater than data.size * threshold</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to use when computing k-NN rule (normally 3 neighbours)</p></dd><dt class="param">threshold</dt><dd class="cmt"><p>consider a class to be undersampled if the number of instances of this class is
+                  greater than data.size * threshold</p></dd><dt class="param">normalize</dt><dd class="cmt"><p>normalize the data or not</p></dd><dt class="param">randomData</dt><dd class="cmt"><p>iterate through the data randomly or not</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -348,22 +348,6 @@ Distribution&quot; by J. Laurikkala.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.NCL#classesToWorkWith" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="classesToWorkWith:Array[Any]"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/NCL.html#classesToWorkWith:Array[Any]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">classesToWorkWith</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -407,38 +391,6 @@ Distribution&quot; by J. Laurikkala.
       
       <p class="shortcomment cmt">Compute the NCL algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>Compute the NCL algorithm.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>undersampled data structure</p></dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.NCL#dataToWorkWith" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="dataToWorkWith:Array[Array[Double]]"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/NCL.html#dataToWorkWith:Array[Array[Double]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">dataToWorkWith</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
-      </span>
-      
-      
-    </li><li name="soul.algorithm.undersampling.NCL#distances" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="distances:Array[Array[Double]]"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/NCL.html#distances:Array[Array[Double]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">distances</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -545,6 +497,22 @@ Distribution&quot; by J. Laurikkala.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.NCL#normalize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="normalize:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/NCL.html#normalize:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">normalize</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
@@ -587,6 +555,22 @@ Distribution&quot; by J. Laurikkala.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="soul.algorithm.undersampling.NCL#randomData" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="randomData:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../soul/algorithm/undersampling/NCL.html#randomData:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomData</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
