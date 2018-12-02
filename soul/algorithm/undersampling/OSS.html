@@ -127,8 +127,8 @@
                         <a href="CNN.html" title="Condensed Nearest Neighbor decision rule.">CNN</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="CPM.html" title="Class Purity Maximization core."></a>
-                        <a href="CPM.html" title="Class Purity Maximization core.">CPM</a>
+                        <a class="class" href="CPM.html" title="Class Purity Maximization."></a>
+                        <a href="CPM.html" title="Class Purity Maximization.">CPM</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="ClusterOSS.html" title="ClusterOSS."></a>
@@ -163,20 +163,20 @@
                         <a href="NM.html" title="NearMiss.">NM</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="" title="One-Side Selection core."></a>
-                        <a href="" title="One-Side Selection core.">OSS</a>
+                        <a class="class" href="" title="One-Side Selection."></a>
+                        <a href="" title="One-Side Selection.">OSS</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="RU.html" title="Compute a random algorithm."></a>
                         <a href="RU.html" title="Compute a random algorithm.">RU</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="SBC.html" title="Undersampling Based on Clustering core."></a>
-                        <a href="SBC.html" title="Undersampling Based on Clustering core.">SBC</a>
+                        <a class="class" href="SBC.html" title="Undersampling Based on Clustering."></a>
+                        <a href="SBC.html" title="Undersampling Based on Clustering.">SBC</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="TL.html" title="Tomek Link core."></a>
-                        <a href="TL.html" title="Tomek Link core.">TL</a>
+                        <a class="class" href="TL.html" title="Tomek Link."></a>
+                        <a href="TL.html" title="Tomek Link.">TL</a>
                       </li>
               </ul>
             </div>
@@ -205,7 +205,7 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>One-Side Selection core. Original paper: &quot;Addressing the Curse of Imbalanced
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>One-Side Selection. Original paper: &quot;Addressing the Curse of Imbalanced
 Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
 </p></div><div class="toggleContainer block">
           <span class="toggle">
@@ -258,9 +258,9 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.undersampling.OSS#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance,normalize:Boolean,randomData:Boolean):soul.algorithm.undersampling.OSS"></a><a id="&lt;init&gt;:OSS"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,dist:soul.util.Utilities.Distance.Distance,normalize:Boolean,randomData:Boolean,verbose:Boolean):soul.algorithm.undersampling.OSS"></a><a id="&lt;init&gt;:OSS"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/OSS.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],distance:soul.util.Utilities.Distances.Distance,normalize:Boolean,randomData:Boolean):soul.algorithm.undersampling.OSS" title="Permalink">
+      <a href="../../../soul/algorithm/undersampling/OSS.html#&lt;init&gt;(data:soul.data.Data,seed:Long,dist:soul.util.Utilities.Distance.Distance,normalize:Boolean,randomData:Boolean,verbose:Boolean):soul.algorithm.undersampling.OSS" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -269,10 +269,10 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">OSS</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="normalize">normalize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="randomData">randomData: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
+        <span class="name">OSS</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="dist">dist: <a href="../../util/Utilities$$Distance$.html#Distance=soul.util.Utilities.Distance.Value" class="extmbr" name="soul.util.Utilities.Distance.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distance.EUCLIDEAN</a></span></span></span>, <span name="normalize">normalize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="randomData">randomData: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="verbose">verbose: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule</p></dd><dt class="param">normalize</dt><dd class="cmt"><p>normalize the data or not</p></dd><dt class="param">randomData</dt><dd class="cmt"><p>iterate through the data randomly or not</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">dist</dt><dd class="cmt"><p>object of Distance enumeration representing the distance to be used</p></dd><dt class="param">normalize</dt><dd class="cmt"><p>normalize the data or not</p></dd><dt class="param">randomData</dt><dd class="cmt"><p>iterate through the data randomly or not</p></dd><dt class="param">verbose</dt><dd class="cmt"><p>choose to display information about the execution or not</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -496,22 +496,6 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.OSS#normalize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="normalize:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/OSS.html#normalize:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">normalize</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
@@ -554,22 +538,6 @@ Training Sets: One-Side Selection&quot; by Miroslav Kubat and Stan Matwin.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="soul.algorithm.undersampling.OSS#randomData" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="randomData:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/undersampling/OSS.html#randomData:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">randomData</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

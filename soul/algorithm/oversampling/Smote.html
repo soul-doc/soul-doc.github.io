@@ -246,9 +246,9 @@ Bowyer, Lawrence O. Hall and W. Philip Kegelmeyer.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="soul.algorithm.oversampling.SMOTE#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],percent:Int,k:Int,distance:soul.util.Utilities.Distances.Distance,normalize:Boolean):soul.algorithm.oversampling.SMOTE"></a><a id="&lt;init&gt;:SMOTE"></a>
+      <a id="&lt;init&gt;(data:soul.data.Data,seed:Long,percent:Int,k:Int,dist:soul.util.Utilities.Distance.Distance,normalize:Boolean,verbose:Boolean):soul.algorithm.oversampling.SMOTE"></a><a id="&lt;init&gt;:SMOTE"></a>
       <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/SMOTE.html#&lt;init&gt;(data:soul.data.Data,seed:Long,file:Option[String],percent:Int,k:Int,distance:soul.util.Utilities.Distances.Distance,normalize:Boolean):soul.algorithm.oversampling.SMOTE" title="Permalink">
+      <a href="../../../soul/algorithm/oversampling/SMOTE.html#&lt;init&gt;(data:soul.data.Data,seed:Long,percent:Int,k:Int,dist:soul.util.Utilities.Distance.Distance,normalize:Boolean,verbose:Boolean):soul.algorithm.oversampling.SMOTE" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -257,10 +257,10 @@ Bowyer, Lawrence O. Hall and W. Philip Kegelmeyer.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">SMOTE</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="file">file: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="percent">percent: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">500</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="distance">distance: <a href="../../util/Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="normalize">normalize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
+        <span class="name">SMOTE</span><span class="params">(<span name="data">data: <a href="../../data/Data.html" class="extype" name="soul.data.Data">Data</a></span>, <span name="seed">seed: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">System.currentTimeMillis()</span></span>, <span name="percent">percent: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">500</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">5</span></span>, <span name="dist">dist: <a href="../../util/Utilities$$Distance$.html#Distance=soul.util.Utilities.Distance.Value" class="extmbr" name="soul.util.Utilities.Distance.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="../../index.html">Distance.EUCLIDEAN</a></span></span></span>, <span name="normalize">normalize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="verbose">verbose: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">file</dt><dd class="cmt"><p>file to store the log. If its set to None, log process would not be done</p></dd><dt class="param">percent</dt><dd class="cmt"><p>amount of SMOTE N%</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of minority class nearest neighbors</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule</p></dd><dt class="param">normalize</dt><dd class="cmt"><p>normalize the data or not</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to work with</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to use. If it is not provided, it will use the system time</p></dd><dt class="param">percent</dt><dd class="cmt"><p>amount of SMOTE N%</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of minority class nearest neighbors</p></dd><dt class="param">dist</dt><dd class="cmt"><p>object of Distance enumeration representing the distance to be used</p></dd><dt class="param">normalize</dt><dd class="cmt"><p>normalize the data or not</p></dd><dt class="param">verbose</dt><dd class="cmt"><p>choose to display information about the execution or not</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -485,22 +485,6 @@ Bowyer, Lawrence O. Hall and W. Philip Kegelmeyer.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="soul.algorithm.oversampling.SMOTE#normalize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="normalize:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../soul/algorithm/oversampling/SMOTE.html#normalize:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">normalize</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">

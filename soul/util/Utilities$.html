@@ -103,6 +103,10 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="soul">soul</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="KDTree.html" title="Wrapper of a com.thesamet.spatial.KDTreeMap adapted for Arrays of Doubles"></a>
+                        <a href="KDTree.html" title="Wrapper of a com.thesamet.spatial.KDTreeMap adapted for Arrays of Doubles">KDTree</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="object" href="" title="Set of utilities functions"></a>
                         <a href="" title="Set of utilities functions">Utilities</a>
                       </li>
@@ -239,6 +243,24 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="soul.util.Utilities#HVDM" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HVDM(n1:Array[Double],n2:Array[Double],nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Double"></a><a id="HVDM(Array[Double],Array[Double],Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Double"></a>
+      <span class="permalink">
+      <a href="../../soul/util/Utilities$.html#HVDM(n1:Array[Double],n2:Array[Double],nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Double" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">HVDM</span><span class="params">(<span name="n1">n1: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="n2">n2: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compute HVDM distance of two nodes
+</p><div class="fullcomment"><div class="comment cmt"><p>Compute HVDM distance of two nodes
+</p></div><dl class="paramcmts block"><dt class="param">n1</dt><dd class="cmt"><p>sample1</p></dd><dt class="param">n2</dt><dd class="cmt"><p>sample2</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>HVDM distance of two nodes</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -335,24 +357,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="soul.util.Utilities#computeDistance" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="computeDistance(n1:Array[Double],n2:Array[Double],distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Double"></a><a id="computeDistance(Array[Double],Array[Double],Distance,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Double"></a>
-      <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#computeDistance(n1:Array[Double],n2:Array[Double],distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Double" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">computeDistance</span><span class="params">(<span name="n1">n1: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="n2">n2: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="distance">distance: <a href="Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Compute distance of two nodes
-</p><div class="fullcomment"><div class="comment cmt"><p>Compute distance of two nodes
-</p></div><dl class="paramcmts block"><dt class="param">n1</dt><dd class="cmt"><p>sample1</p></dd><dt class="param">n2</dt><dd class="cmt"><p>sample2</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>euclidean distance of two nodes</p></dd></dl></div>
     </li><li name="soul.util.Utilities#confusionMatrix" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="confusionMatrix(originalLabels:Array[Any],predictedLabels:Array[Any],minorityClass:Any):(Int,Int,Int,Int)"></a><a id="confusionMatrix(Array[Any],Array[Any],Any):(Int,Int,Int,Int)"></a>
       <span class="permalink">
@@ -403,10 +407,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="soul.util.Utilities#euclideanDistance" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="euclideanDistance(xs:Array[Double],ys:Array[Double]):Double"></a><a id="euclideanDistance(Array[Double],Array[Double]):Double"></a>
+    </li><li name="soul.util.Utilities#euclidean" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="euclidean(x:Array[Double],y:Array[Double]):Double"></a><a id="euclidean(Array[Double],Array[Double]):Double"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#euclideanDistance(xs:Array[Double],ys:Array[Double]):Double" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#euclidean(x:Array[Double],y:Array[Double]):Double" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -415,12 +419,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">euclideanDistance</span><span class="params">(<span name="xs">xs: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="ys">ys: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">euclidean</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="y">y: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       
       <p class="shortcomment cmt">Compute the Euclidean Distance between two points
 </p><div class="fullcomment"><div class="comment cmt"><p>Compute the Euclidean Distance between two points
-</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>first element</p></dd><dt class="param">ys</dt><dd class="cmt"><p>second element</p></dd><dt>returns</dt><dd class="cmt"><p>Euclidean Distance between xs and ys</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>first instance</p></dd><dt class="param">y</dt><dd class="cmt"><p>second instance</p></dd><dt>returns</dt><dd class="cmt"><p>euclidean distance between the instances</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -500,9 +504,9 @@ instances of the minority class)
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="soul.util.Utilities#kFoldPrediction" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="kFoldPrediction(data:Array[Array[Double]],labels:Array[Any],k:Int,nFolds:Int,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Any]"></a><a id="kFoldPrediction(Array[Array[Double]],Array[Any],Int,Int,Distance,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Array[Any]"></a>
+      <a id="kFoldPrediction(data:Array[Array[Double]],labels:Array[Any],k:Int,nFolds:Int,which:String):Array[Any]"></a><a id="kFoldPrediction(Array[Array[Double]],Array[Any],Int,Int,String):Array[Any]"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#kFoldPrediction(data:Array[Array[Double]],labels:Array[Any],k:Int,nFolds:Int,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Any]" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#kFoldPrediction(data:Array[Array[Double]],labels:Array[Any],k:Int,nFolds:Int,which:String):Array[Any]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -511,12 +515,30 @@ instances of the minority class)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">kFoldPrediction</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="nFolds">nFolds: <span class="extype" name="scala.Int">Int</span></span>, <span name="distance">distance: <a href="Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="Utilities$$Distances$.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+        <span class="name">kFoldPrediction</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="nFolds">nFolds: <span class="extype" name="scala.Int">Int</span></span>, <span name="which">which: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Split the data into nFolds folds and predict the labels using the test
 </p><div class="fullcomment"><div class="comment cmt"><p>Split the data into nFolds folds and predict the labels using the test
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>target data</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">nFolds</dt><dd class="cmt"><p>number of subsets to create</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>the predictedLabels with less error</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>target data</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">nFolds</dt><dd class="cmt"><p>number of subsets to create</p></dd><dt class="param">which</dt><dd class="cmt"><p>&quot;nearest&quot; to return the nearest neighbours, otherwise, return the farthest ones</p></dd><dt>returns</dt><dd class="cmt"><p>the predictedLabels with less error</p></dd></dl></div>
+    </li><li name="soul.util.Utilities#kFoldPredictionHVDM" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="kFoldPredictionHVDM(data:Array[Array[Double]],labels:Array[Any],k:Int,nFolds:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]],which:String):Array[Any]"></a><a id="kFoldPredictionHVDM(Array[Array[Double]],Array[Any],Int,Int,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]],String):Array[Any]"></a>
+      <span class="permalink">
+      <a href="../../soul/util/Utilities$.html#kFoldPredictionHVDM(data:Array[Array[Double]],labels:Array[Any],k:Int,nFolds:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]],which:String):Array[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kFoldPredictionHVDM</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="nFolds">nFolds: <span class="extype" name="scala.Int">Int</span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>, <span name="which">which: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Split the data into nFolds folds and predict the labels using the test
+</p><div class="fullcomment"><div class="comment cmt"><p>Split the data into nFolds folds and predict the labels using the test
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>target data</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">nFolds</dt><dd class="cmt"><p>number of subsets to create</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt class="param">which</dt><dd class="cmt"><p>&quot;nearest&quot; to return the nearest neighbours, otherwise, return the farthest ones</p></dd><dt>returns</dt><dd class="cmt"><p>the predictedLabels with less error</p></dd></dl></div>
     </li><li name="soul.util.Utilities#kMeans" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="kMeans(data:Array[Array[Double]],nominal:Array[Int],numClusters:Int,restarts:Int,minDispersion:Double,maxIterations:Int,seed:Long):(Double,Array[Array[Double]],scala.collection.mutable.Map[Int,Array[Int]])"></a><a id="kMeans(Array[Array[Double]],Array[Int],Int,Int,Double,Int,Long):(Double,Array[Array[Double]],Map[Int,Array[Int]])"></a>
       <span class="permalink">
@@ -537,9 +559,9 @@ instances of the minority class)
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>data to be clustered</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>array to know which attributes are nominal</p></dd><dt class="param">numClusters</dt><dd class="cmt"><p>number of clusters to be created</p></dd><dt class="param">restarts</dt><dd class="cmt"><p>number of times to relaunch the core</p></dd><dt class="param">minDispersion</dt><dd class="cmt"><p>stop if dispersion is lower than this value</p></dd><dt class="param">maxIterations</dt><dd class="cmt"><p>number of iterations to be done in KMeans core</p></dd><dt class="param">seed</dt><dd class="cmt"><p>seed to initialize the random object</p></dd><dt>returns</dt><dd class="cmt"><p>(dispersion, centroids of the cluster, a map of the form: clusterID -&gt; Array of elements in this cluster,
         a map of the form: elementID -&gt; cluster associated)</p></dd></dl></div>
     </li><li name="soul.util.Utilities#kNeighbors" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="kNeighbors(data:Array[Array[Double]],node:Int,k:Int,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a><a id="kNeighbors(Array[Array[Double]],Int,Int,Distance,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a>
+      <a id="kNeighbors(data:Array[Array[Double]],node:Int,k:Int):Array[Int]"></a><a id="kNeighbors(Array[Array[Double]],Int,Int):Array[Int]"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#kNeighbors(data:Array[Array[Double]],node:Int,k:Int,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#kNeighbors(data:Array[Array[Double]],node:Int,k:Int):Array[Int]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -548,16 +570,16 @@ instances of the minority class)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">kNeighbors</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="node">node: <span class="extype" name="scala.Int">Int</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="distance">distance: <a href="Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">kNeighbors</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="node">node: <span class="extype" name="scala.Int">Int</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Compute kNN core
 </p><div class="fullcomment"><div class="comment cmt"><p>Compute kNN core
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>array of samples</p></dd><dt class="param">node</dt><dd class="cmt"><p>index whom neighbors are going to be evaluated</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt class="param">distance</dt><dd class="cmt"><p>specifies hvdm or euclideanDistance</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>index of the neighbors of node</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>array of samples</p></dd><dt class="param">node</dt><dd class="cmt"><p>index whom neighbors are going to be evaluated</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt>returns</dt><dd class="cmt"><p>index of the neighbors of node</p></dd></dl></div>
     </li><li name="soul.util.Utilities#kNeighbors" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="kNeighbors(data:Array[Array[Double]],node:Array[Double],k:Int,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a><a id="kNeighbors(Array[Array[Double]],Array[Double],Int,Distance,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a>
+      <a id="kNeighbors(data:Array[Array[Double]],node:Array[Double],k:Int):Array[Int]"></a><a id="kNeighbors(Array[Array[Double]],Array[Double],Int):Array[Int]"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#kNeighbors(data:Array[Array[Double]],node:Array[Double],k:Int,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#kNeighbors(data:Array[Array[Double]],node:Array[Double],k:Int):Array[Int]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -566,12 +588,48 @@ instances of the minority class)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">kNeighbors</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="node">node: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="distance">distance: <a href="Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">kNeighbors</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="node">node: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Compute kNN core
 </p><div class="fullcomment"><div class="comment cmt"><p>Compute kNN core
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>array of samples</p></dd><dt class="param">node</dt><dd class="cmt"><p>array with the attributes of the node</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt class="param">distance</dt><dd class="cmt"><p>specifies hvdm or euclideanDistance</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>index of the neighbors of node</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>array of samples</p></dd><dt class="param">node</dt><dd class="cmt"><p>array with the attributes of the node</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt>returns</dt><dd class="cmt"><p>index of the neighbors of node</p></dd></dl></div>
+    </li><li name="soul.util.Utilities#kNeighborsHVDM" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="kNeighborsHVDM(data:Array[Array[Double]],node:Int,k:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a><a id="kNeighborsHVDM(Array[Array[Double]],Int,Int,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a>
+      <span class="permalink">
+      <a href="../../soul/util/Utilities$.html#kNeighborsHVDM(data:Array[Array[Double]],node:Int,k:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kNeighborsHVDM</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="node">node: <span class="extype" name="scala.Int">Int</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Compute kNN core
+</p><div class="fullcomment"><div class="comment cmt"><p>Compute kNN core
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>array of samples</p></dd><dt class="param">node</dt><dd class="cmt"><p>index whom neighbors are going to be evaluated</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>index of the neighbors of node</p></dd></dl></div>
+    </li><li name="soul.util.Utilities#kNeighborsHVDM" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="kNeighborsHVDM(data:Array[Array[Double]],node:Array[Double],k:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a><a id="kNeighborsHVDM(Array[Array[Double]],Array[Double],Int,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):Array[Int]"></a>
+      <span class="permalink">
+      <a href="../../soul/util/Utilities$.html#kNeighborsHVDM(data:Array[Array[Double]],node:Array[Double],k:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):Array[Int]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kNeighborsHVDM</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="node">node: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Compute kNN core
+</p><div class="fullcomment"><div class="comment cmt"><p>Compute kNN core
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>array of samples</p></dd><dt class="param">node</dt><dd class="cmt"><p>array with the attributes of the node</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbors</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>index of the neighbors of node</p></dd></dl></div>
     </li><li name="soul.util.Utilities#minority" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="minority(data:Array[Any]):Array[Int]"></a><a id="minority(Array[Any]):Array[Int]"></a>
       <span class="permalink">
@@ -643,9 +701,9 @@ instances of the minority class)
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="soul.util.Utilities#nnRule" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="nnRule(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,which:String,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):(Any,Array[Int])"></a><a id="nnRule(Array[Array[Double]],Array[Double],Int,Array[Any],Int,String,Distance,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):(Any,Array[Int])"></a>
+      <a id="nnRule(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,which:String):(Any,Array[Int],Array[Double])"></a><a id="nnRule(Array[Array[Double]],Array[Double],Int,Array[Any],Int,String):(Any,Array[Int],Array[Double])"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#nnRule(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,which:String,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):(Any,Array[Int])" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#nnRule(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,which:String):(Any,Array[Int],Array[Double])" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -654,16 +712,16 @@ instances of the minority class)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">nnRule</span><span class="params">(<span name="neighbours">neighbours: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="instance">instance: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="which">which: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;nearest&quot;</span></span>, <span name="distance">distance: <a href="Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="Utilities$$Distances$.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>])</span>
+        <span class="name">nnRule</span><span class="params">(<span name="neighbours">neighbours: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="instance">instance: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="which">which: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>])</span>
       </span>
       
-      <p class="shortcomment cmt">Decide the label using the NNRule considering k neighbours of data set
-</p><div class="fullcomment"><div class="comment cmt"><p>Decide the label using the NNRule considering k neighbours of data set
-</p></div><dl class="paramcmts block"><dt class="param">neighbours</dt><dd class="cmt"><p>neighbours of the element</p></dd><dt class="param">instance</dt><dd class="cmt"><p>target instance</p></dd><dt class="param">id</dt><dd class="cmt"><p>id of the instance</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">which</dt><dd class="cmt"><p>if it's sets to &quot;nearest&quot;, return the nearest which, if it sets &quot;farthest&quot;, return the farthest which</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>the label associated to newPoint and the index of the k-nearest which</p></dd></dl></div>
-    </li><li name="soul.util.Utilities#nnRuleDistances" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="nnRuleDistances(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,which:String,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):(Any,Array[Int],Array[Double])"></a><a id="nnRuleDistances(Array[Array[Double]],Array[Double],Int,Array[Any],Int,String,Distance,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]]):(Any,Array[Int],Array[Double])"></a>
+      <p class="shortcomment cmt">Decide the label using the NNRule considering k neighbours of dataset
+</p><div class="fullcomment"><div class="comment cmt"><p>Decide the label using the NNRule considering k neighbours of dataset
+</p></div><dl class="paramcmts block"><dt class="param">neighbours</dt><dd class="cmt"><p>neighbours of the element</p></dd><dt class="param">instance</dt><dd class="cmt"><p>target instance</p></dd><dt class="param">id</dt><dd class="cmt"><p>id of the instance</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">which</dt><dd class="cmt"><p>if it's sets to &quot;nearest&quot;, return the nearest which, if it sets &quot;farthest&quot;, return the farthest which</p></dd><dt>returns</dt><dd class="cmt"><p>the label associated to newPoint and the index of the k-nearest which</p></dd></dl></div>
+    </li><li name="soul.util.Utilities#nnRuleHVDM" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nnRuleHVDM(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]],which:String):(Any,Array[Int],Array[Double])"></a><a id="nnRuleHVDM(Array[Array[Double]],Array[Double],Int,Array[Any],Int,Array[Int],Array[Double],Array[Map[Double,Int]],Array[Map[Double,Map[Any,Int]]],String):(Any,Array[Int],Array[Double])"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#nnRuleDistances(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,which:String,distance:soul.util.Utilities.Distances.Distance,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]]):(Any,Array[Int],Array[Double])" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#nnRuleHVDM(neighbours:Array[Array[Double]],instance:Array[Double],id:Int,labels:Array[Any],k:Int,nominal:Array[Int],sds:Array[Double],attrCounter:Array[Map[Double,Int]],attrClassesCounter:Array[Map[Double,Map[Any,Int]]],which:String):(Any,Array[Int],Array[Double])" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -672,12 +730,12 @@ instances of the minority class)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">nnRuleDistances</span><span class="params">(<span name="neighbours">neighbours: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="instance">instance: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="which">which: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;nearest&quot;</span></span>, <span name="distance">distance: <a href="Utilities$$Distances$.html#Distance=soul.util.Utilities.Distances.Value" class="extmbr" name="soul.util.Utilities.Distances.Distance">Distance</a> = <span class="symbol"><span class="name"><a href="Utilities$$Distances$.html">Distances.EUCLIDEAN</a></span></span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>)</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>])</span>
+        <span class="name">nnRuleHVDM</span><span class="params">(<span name="neighbours">neighbours: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="instance">instance: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="labels">labels: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Any">Any</span>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="nominal">nominal: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="sds">sds: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="attrCounter">attrCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>]]</span>, <span name="attrClassesCounter">attrClassesCounter: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>]]]</span>, <span name="which">which: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>])</span>
       </span>
       
-      <p class="shortcomment cmt">Decide the label using the NNRule considering k neighbours of data set
-</p><div class="fullcomment"><div class="comment cmt"><p>Decide the label using the NNRule considering k neighbours of data set
-</p></div><dl class="paramcmts block"><dt class="param">neighbours</dt><dd class="cmt"><p>neighbours of the element</p></dd><dt class="param">instance</dt><dd class="cmt"><p>target instance</p></dd><dt class="param">id</dt><dd class="cmt"><p>id of the instance</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">which</dt><dd class="cmt"><p>if it's sets to &quot;nearest&quot;, return the nearest which, if it sets &quot;farthest&quot;, return the farthest which</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to use when calling the NNRule</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt>returns</dt><dd class="cmt"><p>the label associated to newPoint, the index of the k-nearest which and the distances</p></dd></dl></div>
+      <p class="shortcomment cmt">Decide the label using the NNRule considering k neighbours of dataset
+</p><div class="fullcomment"><div class="comment cmt"><p>Decide the label using the NNRule considering k neighbours of dataset
+</p></div><dl class="paramcmts block"><dt class="param">neighbours</dt><dd class="cmt"><p>neighbours of the element</p></dd><dt class="param">instance</dt><dd class="cmt"><p>target instance</p></dd><dt class="param">id</dt><dd class="cmt"><p>id of the instance</p></dd><dt class="param">labels</dt><dd class="cmt"><p>labels associated to each point in data</p></dd><dt class="param">k</dt><dd class="cmt"><p>number of neighbours to consider</p></dd><dt class="param">nominal</dt><dd class="cmt"><p>indicate nominal attributes in the instances</p></dd><dt class="param">sds</dt><dd class="cmt"><p>standard deviations</p></dd><dt class="param">attrCounter</dt><dd class="cmt"><p>counter attributes occurrences</p></dd><dt class="param">attrClassesCounter</dt><dd class="cmt"><p>number of occurrences for each value and output class c, for each class</p></dd><dt class="param">which</dt><dd class="cmt"><p>&quot;nearest&quot; to return the nearest neighbours, otherwise, return the farthest ones</p></dd><dt>returns</dt><dd class="cmt"><p>the label associated to newPoint and the index of the k-nearest which</p></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
@@ -774,7 +832,7 @@ Nominal columns are converted to doubles.
       
       <p class="shortcomment cmt">Compute the standard deviation for an array
 </p><div class="fullcomment"><div class="comment cmt"><p>Compute the standard deviation for an array
-</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>array to be used</p></dd><dt>returns</dt><dd class="cmt"><p>standard deviation of xs</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>array to be used</p></dd><dt>returns</dt><dd class="cmt"><p>standard deviation of x</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -985,10 +1043,10 @@ This method only normalize not nominal columns
       <p class="shortcomment cmt">Return an array of the indices that are one
 </p><div class="fullcomment"><div class="comment cmt"><p>Return an array of the indices that are one
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>zero/one array to convert</p></dd><dt>returns</dt><dd class="cmt"><p>indices</p></dd></dl></div>
-    </li><li name="soul.util.Utilities.Distances" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Distances"></a><a id="Distances:Distances"></a>
+    </li><li name="soul.util.Utilities.Distance" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Distance"></a><a id="Distance:Distance"></a>
       <span class="permalink">
-      <a href="../../soul/util/Utilities$.html#Distances" title="Permalink">
+      <a href="../../soul/util/Utilities$.html#Distance" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -997,11 +1055,11 @@ This method only normalize not nominal columns
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Enumeration to store the possible distances" href="Utilities$$Distances$.html"><span class="name">Distances</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+        <a title="Enumeration to represent the possible distances" href="Utilities$$Distance$.html"><span class="name">Distance</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
       </span>
       
-      <p class="shortcomment cmt">Enumeration to store the possible distances</p><div class="fullcomment"><div class="comment cmt"><p>Enumeration to store the possible distances</p><p>EUCLIDEAN: Euclidean Distance for numeric values plus Nominal Distance (minimum distance, 0,
-if the two elements are equal, maximum distance, 1, otherwise) for nominal values.</p><p>HVDM: Proposed in &quot;Improved Heterogeneous Distance Functions&quot; by &quot;D. Randall Wilson and Tony R. Martinez&quot;</p></div></div>
+      <p class="shortcomment cmt">Enumeration to represent the possible distances</p><div class="fullcomment"><div class="comment cmt"><p>Enumeration to represent the possible distances</p><p>EUCLIDEAN: Euclidean distance
+HVDM: Proposed in &quot;Improved Heterogeneous Distance Functions&quot; by &quot;D. Randall Wilson and Tony R. Martinez&quot;</p></div></div>
     </li>
               </ol>
             </div>
